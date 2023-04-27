@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/numeroPorCento"
+        android:layout_width="120dp"
+        android:layout_height="59dp"
+        android:background="#DC5757"
+        android:backgroundTint="#DB5757"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.459" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="240dp"
+        android:layout_height="109dp"
+        android:text="Conversor de porcentagem"
+        android:textColor="#CD1C1C"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <Button
+        android:id="@+id/botaoConverter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#B241CA43"
+        android:backgroundTint="#3C9C3F"
+        android:onClick="botaoConverter"
+        android:text="Converter"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo"
+        app:layout_constraintVertical_bias="0.755" />
+
+    <TextView
+        android:id="@+id/de"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="% de"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/botaoConverter"
+        app:layout_constraintEnd_toStartOf="@+id/numero"
+        app:layout_constraintStart_toEndOf="@+id/numeroPorCento"
+        app:layout_constraintTop_toBottomOf="@+id/titulo"
+        app:layout_constraintVertical_bias="0.452" />
+
+    <EditText
+        android:id="@+id/numero"
+        android:layout_width="120dp"
+        android:layout_height="59dp"
+        android:background="#4F60C9"
+        android:backgroundTint="#4F60CA"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.459" />
+
+    <EditText
+        android:id="@+id/resultado"
+        android:layout_width="168dp"
+        android:layout_height="52dp"
+        android:background="#73CA55"
+        android:backgroundTint="#73C955"
+        android:ems="10"
+        android:hint="Resultado"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/botaoConverter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/de" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
